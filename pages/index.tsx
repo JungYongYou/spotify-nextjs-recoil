@@ -1,14 +1,15 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
+import Sidebar from '../components/Sidebar'
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>Spotify Clone</title>
-      </Head>
+    <div className="bg-black h-screen overflow-hidden">
+      <main className=''>
+        <Sidebar />
+        {/* Center */}
+      </main>
 
-      <h1>Spotify Clone with NextJS, TailWindCSS, Recoil</h1>
+      <div>{/* Player */}</div>
     </div>
   )
 }
